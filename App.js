@@ -1,7 +1,12 @@
 import React, {useEffect, useState} from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import SplashScreen from './src/SplashScreen/index';
-import Home from './src/Home/index'
+import Home from './src/Home/index';
+import ProfilSekolah from './src/ProfilSekolah/index';
+import InformasiPPDB from './src/InformasiPPDB/index';
+import Prestasi from './src/Prestasi/index';
+import Ekstrakulikuler from './src/Home/Ekstrakulikuler/index';
+import Pengumuman from './src/Pengumuman';
 
 export default function App() {
   const [splash, IsSplash] = useState(true)
@@ -14,9 +19,14 @@ export default function App() {
   }, []);
 
   return (
-    <View style={styles.container}>
-      {splash && <SplashScreen />}
-      {home && <Home />}
+    <View>
+      {/* {splash && <SplashScreen />}
+      {home && <Home />} */}
+      {/* <ProfilSekolah /> */}
+      {/* <InformasiPPDB /> */}
+      {/* <Prestasi /> */}
+      {/* <Ekstrakulikuler /> */}
+      <Pengumuman />
     </View>
   );
 }
