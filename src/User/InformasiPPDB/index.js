@@ -19,7 +19,17 @@ const InformasiPPDB = () => {
                 </Text>
             </View>
             <View style={styles.card}>
-                
+                <Text style={styles.subjudul}>1.Pendaftaran</Text>
+                <Text style={styles.isi}>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eu, interdum ante sed maecenas eu. Id faucibus hac iaculis mauris sed tristique massa. Magna egestas consequat, consectetur pellentesque. Diam non ultricies viverra integer.
+                </Text>
+            </View>
+
+            <View style={styles.card}>
+                <Text style={styles.subjudul}>2.Waktu Pendaftaran</Text>
+                <Text style={styles.isi}>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eu, interdum ante sed maecenas eu. Id faucibus hac iaculis mauris sed tristique massa. Magna egestas consequat, consectetur pellentesque. Diam non ultricies viverra integer.
+                </Text>
             </View>
         </View>
     );
@@ -58,5 +68,26 @@ const styles = StyleSheet.create({
         marginHorizontal: 63,
         textAlign: 'center',
         color: '#525252'
-    }
+    },
+    card: {
+        backgroundColor: 'white',
+        marginHorizontal: 18,
+        marginVertical: 18,
+        borderRadius: 3,
+        shadowRadius: 3
+    },
+    subjudul: {
+        fontSize: 20,
+        textAlign: 'center',
+        // fontWeight: 'Medium',
+        fontFamily: 'Poppins',
+        marginBottom: 15,
+        marginHorizontal: 15,
+        marginVertical: 10
+    },
+    isi: {
+        textAlign: 'left',
+        marginHorizontal: 10,
+        marginBottom: 10
+    },
 })
