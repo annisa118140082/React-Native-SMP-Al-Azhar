@@ -10,7 +10,7 @@ const Pengumuman = () => {
         }}>
             <View style={styles.titlebar}>
                 <Image source={{uri: IconMenu}} style={styles.icon} />
-                <Text style={styles.namahalaman}>Ekstrakulikuler</Text>
+                <Text style={styles.namahalaman}>Pengumuman</Text>
             </View>
             <View style={{
                 flexDirection: 'column'
