@@ -6,17 +6,18 @@ import TombolKembali from '../../../assets/image/back.png'
 const TentangAplikasi = () => {
     // let ScreenHeight = Dimensions.get("window").height;
     return (
-        // <View style={{
-        //     marginTop: 27
-        // }}>
-        //     <View>
-        //         <Image source={{ uri: TombolKembali}} style={styles.icon}>
-        //     </View>
+        <View style={{
+            marginTop: 27
+        }}>
+            <View style={styles.titlebar}>
+                <Image source={{uri: TombolKembali}} style={styles.icon} />
+            </View>
         <View style={styles.wrapper}>
             <Text style={styles.namaaplikasi}>SMP AL-AZHAR MOBILE</Text>
             <Text style={styles.version}>Versi 1.1.1</Text>
             <Image source={{uri: ImageSplashscreen}} style={styles.logo} />
             {/* <Image source={require('../../assets/image/splashscreen.png')} style={styles.logo} /> */}
+        </View>
         </View>
     );
 }
@@ -24,10 +25,17 @@ const TentangAplikasi = () => {
 export default TentangAplikasi;
 
 const styles = StyleSheet.create({
+    titlebar: {
+        marginLeft: 20,
+        marginTop: 20,
+        flexDirection: 'row',
+        alignItems: 'center'
+    },
     wrapper: {
         justifyContent: 'center',
         alignItems: 'center',
         backgroundColor: 'white',
+        marginVertical: 110
     },
     icon: {
         width: 20,
