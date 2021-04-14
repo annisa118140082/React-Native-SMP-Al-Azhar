@@ -1,12 +1,14 @@
 import React, {useEffect, useState} from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+// import TentangAplikasi from './src/User/TentangAplikasi';
 import SplashScreen from './src/SplashScreen/index';
 import Home from './src/Home/index';
-import ProfilSekolah from './src/ProfilSekolah/index';
-import InformasiPPDB from './src/InformasiPPDB/index';
-import Prestasi from './src/Prestasi/index';
-import Ekstrakulikuler from './src/Home/Ekstrakulikuler/index';
-import Pengumuman from './src/Pengumuman';
+// import ProfilSekolah from './src/User/ProfilSekolah/index';
+// import InformasiPPDB from './src/User/InformasiPPDB/index';
+import Ekstrakulikuler from './src/User/Ekstrakulikuler/index'
+// import Pengumuman from './src/User/Pengumuman/index'
+import TentangAplikasi from './src/User/TentangAplikasi'
+import Prestasi from './src/User/Prestasi';
 
 export default function App() {
   const [splash, IsSplash] = useState(true)
@@ -20,13 +22,14 @@ export default function App() {
 
   return (
     <View>
-      {/* {splash && <SplashScreen />}
-      {home && <Home />} */}
+      {splash && <SplashScreen />}
+      {home && <Home />}
       {/* <ProfilSekolah /> */}
       {/* <InformasiPPDB /> */}
-      {/* <Prestasi /> */}
       {/* <Ekstrakulikuler /> */}
-      <Pengumuman />
+      {/* <TentangAplikasi /> */}
+      {/* <Pengumuman /> */}
+      {/* <Prestasi /> */}
     </View>
   );
 }
