@@ -3,14 +3,14 @@ import { View, Text, Image, StyleSheet} from 'react-native'
 import IconMenu from '../../assets/image/menu1.png'
 import Profil1 from '../../assets/image/profil1.png'
 
-const Prestasi = () => {
+const Ekstrakulikuler = () => {
     return (
         <View style={{
             marginTop: 27
         }}>
             <View style={styles.titlebar}>
-                <Image source={{uri: IconMenu}} style={styles.icon} />
-                <Text style={styles.namahalaman}>Prestasi</Text>
+                <Image onPress={()=>navigation.toggleDrawer()} source={require('../../assets/image/menu1.png')} style={styles.icon} />
+                <Text style={styles.namahalaman}>Ekstrakulikuler</Text>
             </View>
             <View style={{
                 flexDirection: 'row'
@@ -20,10 +20,7 @@ const Prestasi = () => {
                 }}>
                     <Image source={{uri: Profil1}} style={styles.fotoprofil}/>
                     <Text style={styles.namasiswaberprestasi}>
-                        Nama siswa
-                    </Text>
-                    <Text style={styles.namakejuaraan}>
-                        Nama Kejuaraan
+                        Nama Ekstrakulikuler
                     </Text>
                 </View>
                 <View style={{
@@ -31,10 +28,7 @@ const Prestasi = () => {
                 }}>
                     <Image source={{uri: Profil1}} style={styles.fotoprofil}/>
                     <Text style={styles.namasiswaberprestasi}>
-                        Nama siswa
-                    </Text>
-                    <Text style={styles.namakejuaraan}>
-                        Nama Kejuaraan
+                        Nama Ekstrakulikuler
                     </Text>
                 </View>
             </View>
@@ -42,7 +36,7 @@ const Prestasi = () => {
     );
 }
 
-export default Prestasi;
+export default Ekstrakulikuler;
 
 const styles = StyleSheet.create({
     titlebar: {
@@ -69,17 +63,11 @@ const styles = StyleSheet.create({
         marginTop: 18
     },
     namasiswaberprestasi: {
-        fontSize: 15,
-        fontFamily: 'Poppins',
-        color: '#000000',
-        marginLeft: 18,
-        marginTop: 10
-    },
-    namakejuaraan: {
         fontSize: 18,
         fontFamily: 'Poppins',
         color: '#000000',
-        marginLeft: 18,
-        marginVertical: 15
-    }
+        marginTop: 10,
+        textAlign: 'center',
+        justifyContent: 'center'
+    },
 })

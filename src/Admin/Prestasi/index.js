@@ -1,16 +1,16 @@
 import React from 'react'
 import { View, Text, Image, StyleSheet} from 'react-native'
-import IconMenu from '../../../assets/image/menu1.png'
-import Profil1 from '../../../assets/image/profil1.png'
+import IconMenu from '../../assets/image/menu1.png'
+import Profil1 from '../../assets/image/profil1.png'
 
-const Ekstrakulikuler = () => {
+const Prestasi = () => {
     return (
         <View style={{
             marginTop: 27
         }}>
             <View style={styles.titlebar}>
-                <Image source={{uri: IconMenu}} style={styles.icon} />
-                <Text style={styles.namahalaman}>Ekstrakulikuler</Text>
+                <Image onPress={()=>navigation.toggleDrawer()} source={require('../../assets/image/menu1.png')} style={styles.icon} />
+                <Text style={styles.namahalaman}>Prestasi</Text>
             </View>
             <View style={{
                 flexDirection: 'row'
@@ -20,7 +20,10 @@ const Ekstrakulikuler = () => {
                 }}>
                     <Image source={{uri: Profil1}} style={styles.fotoprofil}/>
                     <Text style={styles.namasiswaberprestasi}>
-                        Nama Ekstrakulikuler
+                        Nama siswa
+                    </Text>
+                    <Text style={styles.namakejuaraan}>
+                        Nama Kejuaraan
                     </Text>
                 </View>
                 <View style={{
@@ -28,7 +31,10 @@ const Ekstrakulikuler = () => {
                 }}>
                     <Image source={{uri: Profil1}} style={styles.fotoprofil}/>
                     <Text style={styles.namasiswaberprestasi}>
-                        Nama Ekstrakulikuler
+                        Nama siswa
+                    </Text>
+                    <Text style={styles.namakejuaraan}>
+                        Nama Kejuaraan
                     </Text>
                 </View>
             </View>
@@ -36,7 +42,7 @@ const Ekstrakulikuler = () => {
     );
 }
 
-export default Ekstrakulikuler;
+export default Prestasi;
 
 const styles = StyleSheet.create({
     titlebar: {
@@ -63,11 +69,17 @@ const styles = StyleSheet.create({
         marginTop: 18
     },
     namasiswaberprestasi: {
+        fontSize: 15,
+        fontFamily: 'Poppins',
+        color: '#000000',
+        marginLeft: 18,
+        marginTop: 10
+    },
+    namakejuaraan: {
         fontSize: 18,
         fontFamily: 'Poppins',
         color: '#000000',
-        marginTop: 10,
-        textAlign: 'center',
-        justifyContent: 'center'
-    },
+        marginLeft: 18,
+        marginVertical: 15
+    }
 })

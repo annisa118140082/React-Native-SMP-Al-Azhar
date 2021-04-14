@@ -9,7 +9,7 @@ const InformasiPPDB = () => {
             marginTop: 27
         }}>
             <View style={styles.titlebar}>
-                <Image source={{uri: IconMenu}} style={styles.icon} />
+                <Image onPress={()=>navigation.toggleDrawer()} source={require('../../assets/image/menu1.png')} style={styles.icon} />
                 <Text style={styles.namahalaman}>Informasi PPDB</Text>
             </View>
             <View>

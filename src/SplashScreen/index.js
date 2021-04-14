@@ -5,7 +5,8 @@ import ImageSplashScreen from '../../assets/image/splashscreen.png'
 const SplashScreen = () => {
     return (
         <View style={styles.wrapper}>
-            <Image source={{uri: ImageSplashScreen}} style={styles.logo} />
+            {/* <Image source={{uri: ImageSplashScreen}} style={styles.logo} /> */}
+            <Image source={require('../../assets/image/splashscreen.png')} style={styles.logo} />
         </View>
     );
 }

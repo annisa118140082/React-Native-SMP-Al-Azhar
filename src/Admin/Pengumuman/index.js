@@ -3,13 +3,14 @@ import { View, Text, Image, StyleSheet} from 'react-native'
 import IconMenu from '../../assets/image/menu1.png'
 import Profil1 from '../../assets/image/profil1.png'
 
-const Pengumuman = () => {
+
+function Pengumuman ({navigation}) {
     return (
         <View style={{
             marginTop: 27
         }}>
             <View style={styles.titlebar}>
-                <Image source={{uri: IconMenu}} style={styles.icon} />
+                <Image onPress={()=>navigation.toggleDrawer()} source={require('../../assets/image/menu1.png')} style={styles.icon} />
                 <Text style={styles.namahalaman}>Ekstrakulikuler</Text>
             </View>
             <View style={{
@@ -18,7 +19,7 @@ const Pengumuman = () => {
                 <View style={{
                     flex:1
                 }}>
-                    <Image source={{uri: Profil1}} style={styles.fotoprofil}/>
+                    <Image source={require('../../assets/image/profil1.png')} style={styles.fotoprofil}/>
                     <Text style={styles.namasiswaberprestasi}>
                         Judul Pengumuman
                     </Text>
@@ -26,7 +27,7 @@ const Pengumuman = () => {
                 <View style={{
                     flex:1
                 }}>
-                    <Image source={{uri: Profil1}} style={styles.fotoprofil}/>
+                    <Image source={require('../../assets/image/profil1.png')} style={styles.fotoprofil}/>
                     <Text style={styles.namasiswaberprestasi}>
                        Judul Pengumuman
                     </Text>
