@@ -50,7 +50,7 @@ const styles = StyleSheet.create({
     namaaplikasi: {
         fontFamily: 'Poppins',
         fontSize: 20,
-        fontWeight: 'SemiBold',
+        // fontWeight: 'SemiBold',
         textAlign: 'center',
     },
     version: {

@@ -2,13 +2,15 @@ import React from 'react'
 import { View, Text, Image, StyleSheet, Button} from 'react-native'
 import IconMenu from '../../../assets/image/menu1.png'
 
+// function TanyaSekolah({navigation}) {
 function TanyaSekolah({navigation}) {
     return (
         <View style={{
             marginTop: 27
         }}>
             <View style={styles.titlebar}>
-                <Image onPress={()=>navigation.toggleDrawer()} source={require('../../../assets/image/menu1.png')} style={styles.icon} />
+                {/* <Image onPress={()=>navigation.toggleDrawer()} source={require('../../../assets/image/menu1.png')} style={styles.icon} /> */}
+                <Image source={require('../../../assets/image/menu1.png')} style={styles.icon} />
                 <Text style={styles.namahalaman}>Tanya Sekolah</Text>
             </View>
            

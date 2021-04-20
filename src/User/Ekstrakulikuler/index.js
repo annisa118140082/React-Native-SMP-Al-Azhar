@@ -13,32 +13,35 @@ const Ekstrakulikuler = () => {
                 <Image source={{uri: IconMenu}} style={styles.icon} />
                 <Text style={styles.namahalaman}>Ekstrakulikuler</Text>
             </View>
-            <View style={{ flex: 1 }}>
-                <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+            <View style={{ flex: 1, flexDirection: 'row' }}>
+                <View style={{ flexDirection: 'column', alignItems: 'center' }}>
                     <Image source={{uri: Profil1}} style={styles.fotoprofil}/>
                     <Text style={styles.namaeskul}>
                         Voli
                     </Text>
                 </View>
-                <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+                <View style={{ flexDirection: 'column', alignItems: 'center' }}>
                     <Image source={{uri: Profil1}} style={styles.fotoprofil}/>
                     <Text style={styles.namaeskul}>
                         Fotografi
                     </Text>
                 </View>
             </View>
-                <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+            <View style={{ flex: 1, flexDirection: 'row' }}>
+                <View style={{ flexDirection: 'column', alignItems: 'center' }}>
                     <Image source={{uri: Profil1}} style={styles.fotoprofil}/>
                     <Text style={styles.namaeskul}>
                         Tataboga
                     </Text>
                 </View>
-                <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+                <View style={{ flexDirection: 'column', alignItems: 'center' }}>
                     <Image source={{uri: Profil1}} style={styles.fotoprofil}/>
                     <Text style={styles.namaeskul}>
                         Pramuka
                     </Text>
                 </View>
+            </View>
+            
             </ScrollView>
         </View>
     );
