@@ -19,16 +19,51 @@ const InformasiPPDB = () => {
                 </Text>
             </View>
             <View style={styles.card}>
-                <Text style={styles.subjudul}>1.Pendaftaran</Text>
+                <Text style={styles.subjudul}>1. Siswa mengisi form pendaftaran online</Text>
                 <Text style={styles.isi}>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eu, interdum ante sed maecenas eu. Id faucibus hac iaculis mauris sed tristique massa. Magna egestas consequat, consectetur pellentesque. Diam non ultricies viverra integer.
+                    Calon peserta memilih sekolah dan mengisi biodata pendaftaran online sesuai jadwal yang ditetapkan. Tidak ada dokumen yang perlu disiapkan pada tahap ini.
                 </Text>
             </View>
 
             <View style={styles.card}>
-                <Text style={styles.subjudul}>2.Waktu Pendaftaran</Text>
+                <Text style={styles.subjudul}>2. Siswa melakukan pembayaran</Text>
                 <Text style={styles.isi}>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eu, interdum ante sed maecenas eu. Id faucibus hac iaculis mauris sed tristique massa. Magna egestas consequat, consectetur pellentesque. Diam non ultricies viverra integer.
+                    Calon peserta didik mencetak form bukti pendaftaran kemudian melakukan pembayaran untuk memperoleh PIN yang digunakan untuk login.
+                </Text>
+            </View>
+
+            <View style={styles.card}>
+                <Text style={styles.subjudul}>3. Siswa melengkapi biodata</Text>
+                <Text style={styles.isi}>
+                    Calon peserta didik login dengan PIN yang diberikan oleh pihak sekolah dan kemudian melengkapi biodata secara online. Persiapkan dokumen digital (scan) seperti pas foto, kartu keluarga, sertifikat, ijazah, dll.
+                </Text>
+            </View>
+
+            <View style={styles.card}>
+                <Text style={styles.subjudul}>4. Panitia memverifikasi data</Text>
+                <Text style={styles.isi}>
+                    Panitia akan melakukan verifikasi terhadap data dan berkas yang diupload oleh calon peserta didik. Calon peserta didik yang dinyatakan lolos verifikasi dapat mengikuti tahap seleksi selanjutnya.
+                </Text>
+            </View>
+
+            <View style={styles.card}>
+                <Text style={styles.subjudul}>5. Siswa mengikuti ujian dan wawancara</Text>
+                <Text style={styles.isi}>
+                    Calon peserta didik mengikuti ujian seleksi masuk berbasis online dan dilanjutkan dengan wawancara sesuai jadwal dan mekanisme yang diatur oleh panitia.
+                </Text>
+            </View>
+
+            <View style={styles.card}>
+                <Text style={styles.subjudul}>6. Pengumuman</Text>
+                <Text style={styles.isi}>
+                    Calon peserta didik yang dinyatakan lulus seleksi akan diumumkan secara online dengan cara login menggunakan PIN yang dimiliki oleh masing-masing siswa.
+                </Text>
+            </View>
+
+            <View style={styles.card}>
+                <Text style={styles.subjudul}>7. Daftar Ulang</Text>
+                <Text style={styles.isi}>
+                    Calon peserta didik yang telah lulus seleksi diwajibkan untuk melaksanakan daftar ulang.
                 </Text>
             </View>
         </View>
@@ -70,7 +105,7 @@ const styles = StyleSheet.create({
         color: '#525252'
     },
     card: {
-        backgroundColor: 'white',
+        backgroundColor: '#16ba00',
         marginHorizontal: 18,
         marginVertical: 18,
         borderRadius: 3,
@@ -78,8 +113,9 @@ const styles = StyleSheet.create({
     },
     subjudul: {
         fontSize: 20,
-        textAlign: 'center',
-        // fontWeight: 'Medium',
+        // textAlign: 'center',
+        color: 'white',
+        fontWeight: 'bold',
         fontFamily: 'Poppins',
         marginBottom: 15,
         marginHorizontal: 15,
@@ -88,6 +124,7 @@ const styles = StyleSheet.create({
     isi: {
         textAlign: 'left',
         marginHorizontal: 10,
-        marginBottom: 10
+        marginBottom: 10,
+        color: 'white',
     },
 })

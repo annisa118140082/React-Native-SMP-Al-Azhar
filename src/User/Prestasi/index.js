@@ -1,7 +1,9 @@
 import React from 'react'
 import { View, Text, Image, StyleSheet} from 'react-native'
 import IconMenu from '../../../assets/image/menu1.png'
-import Profil1 from '../../../assets/image/profil1.png'
+import LCC from '../../../assets/image/prestasi/lcc.jpeg'
+import KOSN from '../../../assets/image/prestasi/kosn.jpeg'
+import Pocil from '../../../assets/image/prestasi/pocil.jpeg'
 
 const Prestasi = () => {
     return (
@@ -15,13 +17,13 @@ const Prestasi = () => {
 
                 <View style={{ flex:1 }}>
                     <View style={{ flexDirection: 'row', alignItems: 'center' }}>
-                        <Image source={{uri: Profil1}} style={styles.fotoprofil}/>
+                        <Image source={{uri: LCC}} style={styles.fotoprofil}/>
                         <View>
                             <Text style={styles.namasiswaberprestasi}>
-                                Riski D
+                                Thalita Zahra S, Akbar Maulana, Daffa Ramanda Putra (9A)
                             </Text>
                             <Text style={styles.namakejuaraan}>
-                                Juara I FLS2N 2020 musik tradisional profinsi Lampung
+                                Juara 2 LCC Permuseuman dan Kebudayaan Tingkat Provinsi
                             </Text>
                         </View>
                      </View>        
@@ -29,27 +31,27 @@ const Prestasi = () => {
 
                 <View style={{ flex:1 }}>
                     <View style={{ flexDirection: 'row', alignItems: 'center'  }}>
-                        <Image source={{uri: Profil1}} style={styles.fotoprofil}/>
+                        <Image source={{uri: KOSN}} style={styles.fotoprofil}/>
                         <View>
                             <Text style={styles.namasiswaberprestasi}>
-                                Aisyah Kamila
+                                Tania Raisa Azizah (8G)
                             </Text>
                             <Text style={styles.namakejuaraan}>
-                                Juara II FLS2N 2019 musik tradisional profinsi Lampung
+                                Juara 4 KOSN Tk. Kota Bandar Lampung
                             </Text>
                         </View>
                     </View>
                 </View>
-                    
+
                 <View style={{ flex:1 }}>
                     <View style={{ flexDirection: 'row', alignItems: 'center'  }}>
-                        <Image source={{uri: Profil1}} style={styles.fotoprofil}/>
+                        <Image source={{uri: Pocil}} style={styles.fotoprofil}/>
                         <View>
                             <Text style={styles.namasiswaberprestasi}>
-                                Shifa Salsabila
+                                Wahayu Tri Fadilla (9A)
                             </Text>
                             <Text style={styles.namakejuaraan}>
-                                Juara I FLS2N 2018 musik tradisional profinsi Lampung
+                                Juara 2 POCIL Selampung (Polda) Provinsi Lampung
                             </Text>
                         </View>
                     </View>
@@ -91,6 +93,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         marginTop: 18,
         fontWeight: 'bold',
+        width: 180
     },
     namakejuaraan: {
         fontSize: 17,
