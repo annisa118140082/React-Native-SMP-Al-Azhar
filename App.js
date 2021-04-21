@@ -28,12 +28,12 @@ export default function App() {
       {/* <InformasiPPDB /> */}
       {/* <Ekstrakulikuler /> */}
       {/* <TentangAplikasi /> */}
-      {/* <Pengumuman /> */}
+      {/* .<Pengumuman /> */}
       {/*. <Prestasi /> */}
     </View>
   );
 }
-
+//sa
 const styles = StyleSheet.create({
   container: {
     flex: 1,
