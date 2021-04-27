@@ -17,6 +17,7 @@ const SplashScreen = () => {
 export default SplashScreen;
 
 const styles = StyleSheet.create({
+<<<<<<< HEAD
   wrapper: {
     justifyContent: "center",
     alignItems: "center",
@@ -28,3 +29,16 @@ const styles = StyleSheet.create({
     marginVertical: 230,
   },
 });
+=======
+    wrapper: {
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: 'white'
+    },
+    logo: {
+        width: 148,
+        height: 170,
+        marginVertical: 230
+    }
+})
+>>>>>>> ff65f09513a9239c08de86c7c25be0345eb60763

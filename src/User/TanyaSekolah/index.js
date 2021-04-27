@@ -3,6 +3,7 @@ import { View, Text, Image, StyleSheet, Button } from "react-native";
 import IconMenu from "../../../assets/image/menu1.png";
 
 // function TanyaSekolah({navigation}) {
+<<<<<<< HEAD
 function TanyaSekolah({ navigation }) {
   return (
     <View
@@ -20,6 +21,22 @@ function TanyaSekolah({ navigation }) {
       </View>
     </View>
   );
+=======
+function TanyaSekolah({navigation}) {
+    return (
+        <View style={{
+            marginTop: 27
+        }}>
+            <View style={styles.titlebar}>
+                {/* <Image onPress={()=>navigation.toggleDrawer()} source={require('../../../assets/image/menu1.png')} style={styles.icon} /> */}
+                <Image source={require('../../../assets/image/menu1.png')} style={styles.icon} />
+                <Text style={styles.namahalaman}>Tanya Sekolah</Text>
+            </View>
+           
+        
+        </View>
+    );
+>>>>>>> ff65f09513a9239c08de86c7c25be0345eb60763
 }
 
 export default TanyaSekolah;
