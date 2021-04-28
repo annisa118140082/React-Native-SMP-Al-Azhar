@@ -27,7 +27,7 @@ const ProfilSekolah = () => {
                     NSS{"\t"}{"\t"}{"\t"}{"\t"}202126001085{"\n"}{"\n"}
                     Nama{"\t"}{"\t"}{"\t"}SMPS AL - AZHAR 3 BANDAR LAMPUNG{"\n"}{"\n"}
                     Akreditasi{"\t"}{"\t"}Akreditasi A{"\n"}{"\n"}
-                    Alamat{"\t"}{"\t"}{"\t"}JL. Gunung Tanggamus Raya No.34{"\n"}{"\n"}
+                    Alamat{"\t"}{"\t"}{"\t"}Jl. Mawar No.43, Kedaton, Kec. Kedaton, Kota Bandar Lampung, Lampung 35132{"\n"}{"\n"}
                     Kodepos{"\t"}{"\t"}{"\t"}35141{"\n"}{"\n"}
                     Nomer Telpon{"\t"}{"\t"}0721771482{"\n"}{"\n"}
                     Nomer Faks{"\t"}{"\t"}-{"\n"}{"\n"}
