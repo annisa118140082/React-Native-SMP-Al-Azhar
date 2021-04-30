@@ -4,7 +4,6 @@ import IconMenu from "../../../assets/image/menu1.png";
 import Profil1 from "../../../assets/image/profil1.png";
 
 const Pengumuman = () => {
-<<<<<<< HEAD
   return (
     <View
       style={{
@@ -33,36 +32,6 @@ const Pengumuman = () => {
             style={styles.fotoprofil}
           />
           <Text style={styles.namasiswaberprestasi}>Judul Pengumuman</Text>
-=======
-    return (
-        <View style={{
-            marginTop: 27
-        }}>
-            <View style={styles.titlebar}>
-                <Image source={{uri: IconMenu}} style={styles.icon} />
-                <Text style={styles.namahalaman}>Pengumuman</Text>
-            </View>
-            <View style={{
-                flexDirection: 'column'
-            }}>
-                <View style={{
-                    flex:1
-                }}>
-                    <Image source={{uri: Profil1}} style={styles.fotoprofil}/>
-                    <Text style={styles.namasiswaberprestasi}>
-                        Judul Pengumuman
-                    </Text>
-                </View>
-                <View style={{
-                    flex:1
-                }}>
-                    <Image source={{uri: Profil1}} style={styles.fotoprofil}/>
-                    <Text style={styles.namasiswaberprestasi}>
-                       Judul Pengumuman
-                    </Text>
-                </View>
-            </View>
->>>>>>> ff65f09513a9239c08de86c7c25be0345eb60763
         </View>
         <View
           style={{
