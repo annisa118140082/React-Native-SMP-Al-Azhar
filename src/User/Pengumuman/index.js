@@ -5,11 +5,7 @@ import Profil1 from "../../../assets/image/profil1.png";
 
 const Pengumuman = () => {
   return (
-    <View
-      style={{
-        marginTop: 27,
-      }}
-    >
+    <View style={{ marginTop: 27, }}>
       <View style={styles.titlebar}>
         <Image
           source={require("../../../assets/image/menu1.png")}
@@ -17,33 +13,11 @@ const Pengumuman = () => {
         />
         <Text style={styles.namahalaman}>Pengumuman</Text>
       </View>
-      <View
-        style={{
-          flexDirection: "column",
-        }}
-      >
-        <View
-          style={{
-            flex: 1,
-          }}
-        >
-          <Image
-            source={require("../../../assets/image/profil1.png")}
-            style={styles.fotoprofil}
-          />
-          <Text style={styles.namasiswaberprestasi}>Judul Pengumuman</Text>
-        </View>
-        <View
-          style={{
-            flex: 1,
-          }}
-        >
-          <Image
-            source={require("../../../assets/image/profil1.png")}
-            style={styles.fotoprofil}
-          />
-          <Text style={styles.namasiswaberprestasi}>Judul Pengumuman</Text>
-        </View>
+      <View style={{ flexDirection: "column", justifyContent: 'center', alignItems: 'center' }}>
+        <Image
+          source={require("../../../assets/image/profil1.png")}
+          style={styles.fotoprofil} />
+        <Text style={styles.namasiswaberprestasi}>Judul Pengumuman</Text>
       </View>
     </View>
   );
@@ -71,10 +45,7 @@ const styles = StyleSheet.create({
   fotoprofil: {
     width: 370,
     height: 200,
-    justifyContent: "center",
-    marginHorizontal: 18,
     marginTop: 18,
-    alignItems: "center",
   },
   namasiswaberprestasi: {
     fontSize: 18,

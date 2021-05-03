@@ -23,112 +23,112 @@ const Ekstrakulikuler = ({ navigation }) => {
     <View style={{
       marginTop: 27
     }}>
+      <View style={styles.titlebar}>
+        <Image source={require("../../../assets/image/menu1.png")} style={styles.icon} />
+        <Text style={styles.namahalaman}>Ekstrakulikuler</Text>
+      </View>
       <ScrollView>
-        <View style={styles.titlebar}>
-          <Image source={{ uri: IconMenu }} style={styles.icon} />
-          <Text style={styles.namahalaman}>Ekstrakulikuler</Text>
-        </View>
-        <View style={{ flex: 1, flexDirection: 'row' }}>
+        <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'space-around' }}>
           <View style={{ flexDirection: 'column', alignItems: 'center' }}>
-            <Image source={{ uri: Pramuka }} style={styles.fotoprofil} />
+            <Image source={require("../../../assets/image/ekskul/pramuka.jpg")} style={styles.fotoprofil} />
             <Text style={styles.namaeskul}>
               Pramuka
                     </Text>
           </View>
           <View style={{ flexDirection: 'column', alignItems: 'center' }}>
-            <Image source={{ uri: Rohis }} style={styles.fotoprofil} />
+            <Image source={require("../../../assets/image/ekskul/rohis.jpg")} style={styles.fotoprofil} />
             <Text style={styles.namaeskul}>
               Rohis
                     </Text>
           </View>
         </View>
-        <View style={{ flex: 1, flexDirection: 'row' }}>
+        <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'space-around' }}>
           <View style={{ flexDirection: 'column', alignItems: 'center' }}>
-            <Image source={{ uri: PMR }} style={styles.fotoprofil} />
+            <Image source={require("../../../assets/image/ekskul/pmr.jpg")} style={styles.fotoprofil} />
             <Text style={styles.namaeskul}>
               PMR
                     </Text>
           </View>
           <View style={{ flexDirection: 'column', alignItems: 'center' }}>
-            <Image source={{ uri: English }} style={styles.fotoprofil} />
+            <Image source={require("../../../assets/image/ekskul/english.jpg")} style={styles.fotoprofil} />
             <Text style={styles.namaeskul}>
               English Club
                     </Text>
           </View>
         </View>
-        <View style={{ flex: 1, flexDirection: 'row' }}>
+        <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'space-around' }}>
           <View style={{ flexDirection: 'column', alignItems: 'center' }}>
-            <Image source={{ uri: Olimpiade }} style={styles.fotoprofil} />
+            <Image source={require("../../../assets/image/ekskul/olim.jpg")} style={styles.fotoprofil} />
             <Text style={styles.namaeskul}>
               Olimpiade Sains
                     </Text>
           </View>
           <View style={{ flexDirection: 'column', alignItems: 'center' }}>
-            <Image source={{ uri: MTK }} style={styles.fotoprofil} />
+            <Image source={require("../../../assets/image/ekskul/mtk.jpg")} style={styles.fotoprofil} />
             <Text style={styles.namaeskul}>
               Club MTK
                     </Text>
           </View>
         </View>
-        <View style={{ flex: 1, flexDirection: 'row' }}>
+        <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'space-around' }}>
           <View style={{ flexDirection: 'column', alignItems: 'center' }}>
-            <Image source={{ uri: Vocal }} style={styles.fotoprofil} />
+            <Image source={require("../../../assets/image/ekskul/vocal.jpg")} style={styles.fotoprofil} />
             <Text style={styles.namaeskul}>
               Vocal Group
                     </Text>
           </View>
           <View style={{ flexDirection: 'column', alignItems: 'center' }}>
-            <Image source={{ uri: Seni }} style={styles.fotoprofil} />
+            <Image source={require("../../../assets/image/ekskul/senitari.jpg")} style={styles.fotoprofil} />
             <Text style={styles.namaeskul}>
               Seni Tari
                     </Text>
           </View>
         </View>
-        <View style={{ flex: 1, flexDirection: 'row' }}>
+        <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'space-around' }}>
           <View style={{ flexDirection: 'column', alignItems: 'center' }}>
-            <Image source={{ uri: Keterampilan }} style={styles.fotoprofil} />
+            <Image source={require("../../../assets/image/ekskul/keterampilan.jpg")} style={styles.fotoprofil} />
             <Text style={styles.namaeskul}>
               Keterampilan
                     </Text>
           </View>
           <View style={{ flexDirection: 'column', alignItems: 'center' }}>
-            <Image source={{ uri: Band }} style={styles.fotoprofil} />
+            <Image source={require("../../../assets/image/ekskul/band.jpg")} style={styles.fotoprofil} />
             <Text style={styles.namaeskul}>
               Band
                     </Text>
           </View>
         </View>
-        <View style={{ flex: 1, flexDirection: 'row' }}>
+        <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'space-around' }}>
           <View style={{ flexDirection: 'column', alignItems: 'center' }}>
-            <Image source={{ uri: Futsal }} style={styles.fotoprofil} />
+            <Image source={require("../../../assets/image/ekskul/futsal.jpg")} style={styles.fotoprofil} />
             <Text style={styles.namaeskul}>
               Futsal dan Sepakbola
                     </Text>
           </View>
           <View style={{ flexDirection: 'column', alignItems: 'center' }}>
-            <Image source={{ uri: Atletik }} style={styles.fotoprofil} />
+            <Image source={require("../../../assets/image/ekskul/atletik.jpg")} style={styles.fotoprofil} />
             <Text style={styles.namaeskul}>
               Atletik
                     </Text>
           </View>
         </View>
-        <View style={{ flex: 1, flexDirection: 'row' }}>
+        <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'space-around' }}>
           <View style={{ flexDirection: 'column', alignItems: 'center' }}>
-            <Image source={{ uri: Taekwondo }} style={styles.fotoprofil} />
+            <Image source={require("../../../assets/image/ekskul/taekwondo.jpg")} style={styles.fotoprofil} />
             <Text style={styles.namaeskul}>
               Teakwondo
                     </Text>
           </View>
           <View style={{ flexDirection: 'column', alignItems: 'center' }}>
-            <Image source={{ uri: Silat }} style={styles.fotoprofil} />
+            <Image source={require("../../../assets/image/ekskul/silat.jpg")} style={styles.fotoprofil} />
             <Text style={styles.namaeskul}>
               Pencak Silat
                     </Text>
           </View>
         </View>
-        <View style={{ flex: 1, flexDirection: 'row' }}>
+        <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'space-around' }}>
           <View style={{ flexDirection: 'column', alignItems: 'center' }}>
-            <Image source={{ uri: Karate }} style={styles.fotoprofil} />
+            <Image source={require("../../../assets/image/ekskul/karate.jpg")} style={styles.fotoprofil} />
             <Text style={styles.namaeskul}>
               Karate
                     </Text>

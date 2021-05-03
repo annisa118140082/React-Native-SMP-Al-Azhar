@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Text, Image, StyleSheet } from 'react-native'
+import { View, Text, Image, StyleSheet, ScrollView } from 'react-native'
 import IconMenu from '../../../assets/image/menu1.png'
 import LCC from '../../../assets/image/prestasi/lcc.jpeg'
 import KOSN from '../../../assets/image/prestasi/kosn.jpeg'
@@ -7,24 +7,17 @@ import Pocil from '../../../assets/image/prestasi/pocil.jpeg'
 
 const Prestasi = () => {
   return (
-    <ScrollView>
-      <View
-        style={{
-          marginTop: 50,
-        }}
-      >
-        <View style={styles.titlebar}>
-          <Image
-            source={require("../../../assets/image/menu1.png")}
-            style={styles.icon}
-          />
-          <Text style={styles.namahalaman}>Prestasi</Text>
-        </View>
+    <View style={{ marginTop: 27, }}>
+      <View style={styles.titlebar}>
+        <Image source={require("../../../assets/image/menu1.png")} style={styles.icon} />
+        <Text style={styles.namahalaman}>Prestasi</Text>
+      </View>
+      <ScrollView>
 
         <View>
           <View style={{ flexDirection: "row", alignItems: "center" }}>
             <Image
-              source={require("../../../assets/image/profil1.png")}
+              source={require("../../../assets/image/prestasi/lcc.jpeg")}
               style={styles.fotoprofil}
             />
             <View>
@@ -38,7 +31,7 @@ const Prestasi = () => {
 
         <View style={{ flex: 1 }}>
           <View style={{ flexDirection: 'row', alignItems: 'center' }}>
-            <Image source={{ uri: LCC }} style={styles.fotoprofil} />
+            <Image source={require("../../../assets/image/prestasi/lcc.jpeg")} style={styles.fotoprofil} />
             <View>
               <Text style={styles.namasiswaberprestasi}>
                 Thalita Zahra S, Akbar Maulana, Daffa Ramanda Putra (9A)
@@ -52,7 +45,7 @@ const Prestasi = () => {
 
         <View style={{ flex: 1 }}>
           <View style={{ flexDirection: 'row', alignItems: 'center' }}>
-            <Image source={{ uri: KOSN }} style={styles.fotoprofil} />
+            <Image source={require("../../../assets/image/prestasi/kosn.jpeg")} style={styles.fotoprofil} />
             <View>
               <Text style={styles.namasiswaberprestasi}>
                 Tania Raisa Azizah (8G)
@@ -66,7 +59,7 @@ const Prestasi = () => {
 
         <View style={{ flex: 1 }}>
           <View style={{ flexDirection: 'row', alignItems: 'center' }}>
-            <Image source={{ uri: Pocil }} style={styles.fotoprofil} />
+            <Image source={require("../../../assets/image/prestasi/pocil.jpeg")} style={styles.fotoprofil} />
             <View>
               <Text style={styles.namasiswaberprestasi}>
                 Wahayu Tri Fadilla (9A)
@@ -77,8 +70,8 @@ const Prestasi = () => {
             </View>
           </View>
         </View>
-      </View>
-    </ScrollView >
+      </ScrollView >
+    </View>
   );
 };
 
@@ -115,7 +108,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     marginTop: 18,
     fontWeight: 'bold',
-    width: 180
+    width: 150
   },
   namakejuaraan: {
     fontSize: 17,
@@ -123,6 +116,6 @@ const styles = StyleSheet.create({
     color: '#000000',
     alignItems: 'center',
     marginTop: 5,
-    width: 180
+    width: 155
   }
 })
